@@ -1,40 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>个人主页</title>
+		<title>全部博文</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
     	<link rel="shortcut icon" href="/favicon.ico">
     	<link rel="shortcut icon" href="/favicon.png">
 	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="main">
-					<header id="header">
-					<h1>Zhang Hao</h1>
-						<nav>
-							<ul>
-								<li><a href="http://zhanghao90.cn/blog/" class="icon fa-edit">Blog</a></li>
-								<li><a href="https://github.com/zhhgit" class="icon fa-github-square">Github</a></li>
-								<li><a href="http://zhanghao90.cn/blog/about/" class="icon fa-info-circle">About</a></li>
-							</ul>
-						</nav>
-					</header>
-			</div>
-		</div>
+	<body>
 		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-		<script src="assets/js/trianglify.min.js"></script>
-		<script>
-		    var pattern = Trianglify({
-		        width: window.innerWidth,
-		        height: window.innerHeight
-		    });
-		    document.body.appendChild(pattern.canvas())
+		   	var url = window.location.href;
+		   	window.location.href = url + "/blog";
 		</script>
 	</body>
 </html>
