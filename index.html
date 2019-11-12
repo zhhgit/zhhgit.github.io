@@ -9,8 +9,11 @@
 	</head>
 	<body>
 		<script>
-		   	var url = window.location.href;
-		   	window.location.href = url + "/blog";
+			(function(){
+                var url = window.location.href;
+                window.location.href = url + "blog";
+			})();
+
 		</script>
 	</body>
 </html>
